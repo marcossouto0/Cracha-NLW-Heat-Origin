@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  background-color: var(--black);
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+@media (min-width: 720px) {
+	/* estilos versão tablet */
+  #degrade1{
+    background: url(images/degradê1.svg) no-repeat center/cover;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+  }
+  #degrade2{
+    background: url(images/degradê2.svg) no-repeat center/cover;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  #faixa {
+    position: absolute;
+    background: url(images/faixa.svg) no-repeat center/cover;
+    top: 0;
+    width: 8vh;
+    height: 10vh;
+    
+    z-index: 4;
+  }
+
+  #buraco {
+    position: absolute;
+    background-color: #121214;
+    top: 9.7%;
+    width: 10vh;
+    height: 1vh;
+    left: 46.5%;
+    z-index: 3;
+  }
+
+  main {
+    padding-top: 0;
+    background: url(images/mask.svg) no-repeat center/cover;
+    width: 33%;
+    height: 60vh;
+    background-color: #202024;
+    z-index: 2;
+  }
+
+  body {
+    /* Desktop */
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    /* black2 */
+
+    background: #121214;
+  }
+}
+
+@media (min-width: 960px) {
+	/* estilos versão desktop */
+  #degrade1{
+    background: url(images/degradê1.svg) no-repeat center/cover;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+  }
+  #degrade2{
+    background: url(images/degradê2.svg) no-repeat center/cover;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  #faixa {
+    position: absolute;
+    background: url(images/faixa.svg) no-repeat center/cover;
+    top: 0;
+    width: 8vh;
+    height: 10vh;
+    
+    z-index: 4;
+  }
+
+  #buraco {
+    position: absolute;
+    background-color: #121214;
+    top: 9.7%;
+    width: 10vh;
+    height: 1vh;
+    left: 46.5%;
+    z-index: 3;
+  }
+
+  main {
+    padding-top: 0;
+    background: url(images/mask.svg) no-repeat center/cover;
+    width: 33%;
+    height: 60vh;
+    background-color: #202024;
+    z-index: 2;
+  }
+
+  body {
+    /* Desktop */
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    /* black2 */
+
+    background: #121214;
+  }
+}
